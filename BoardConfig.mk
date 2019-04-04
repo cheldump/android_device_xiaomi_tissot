@@ -25,7 +25,8 @@ TARGET_KERNEL_CONFIG += xiaomi/tissot.config
 # A/B
 AB_OTA_PARTITIONS += \
     boot \
-    system
+    system \
+    vendor
 
 # Properties
 TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
