@@ -21,7 +21,6 @@ PRODUCT_NAME := lineage_tissot
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Mi A1
 PRODUCT_MANUFACTURER := Xiaomi
-TARGET_VENDOR := Xiaomi
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
