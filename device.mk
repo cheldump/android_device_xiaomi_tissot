@@ -75,7 +75,8 @@ PRODUCT_PACKAGES += \
 
 # Overlay
 PRODUCT_PACKAGES += \
-    FrameworksResOverlayTissot
+    FrameworksResOverlayTissot \
+    SettingsOverlayTissot
 
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay-lineage
 
