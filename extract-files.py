@@ -32,6 +32,9 @@ blob_fixups: blob_fixups_user_type = {
         .replace_needed('libstdc++.so', 'libstdc++_vendor.so'),
     'vendor/lib/libmmcamera_tuning.so': blob_fixup()
         .remove_needed('libmm-qcamera.so'),
+    ('vendor/lib64/libvendor.goodix.hardware.fingerprint@1.0-service.so', 'vendor/lib64/hw/gf_fingerprint.goodix.default.so'): blob_fixup()
+        .binary_regex_replace(b'libvendor.goodix.hardware.fingerprint@1.0.so', b'vendor.goodix.hardware.fingerprint@1.0.so\x00\x00\x00'),
+
 }  # fmt: skip
 
 module = ExtractUtilsModule(
