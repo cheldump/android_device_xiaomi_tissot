@@ -10,7 +10,7 @@ include device/xiaomi/msm8953-common/BoardConfigCommon.mk
 DEVICE_PATH := device/xiaomi/tissot
 
 # Display
-TARGET_SCREEN_DENSITY := 440
+TARGET_SCREEN_DENSITY := 400
 
 # HIDL
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
