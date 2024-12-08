@@ -32,6 +32,10 @@ blob_fixups: blob_fixups_user_type = {
         .replace_needed('libstdc++.so', 'libstdc++_vendor.so'),
     'vendor/lib64/libgf_hal.so': blob_fixup()
         .sig_replace('10 03 00 D0 11 52 46 F9', '10 03 00 D0 1F 20 03 D5'),
+    'vendor/lib/libmmcamera_ppeiscore.so': blob_fixup()
+        .add_needed('libppeiscore_shim.so')
+        .remove_needed('libgui.so')
+        .replace_needed('libGLESv2.so', 'libGLESv2_adreno.so'),
     'vendor/lib/libmmcamera_tuning.so': blob_fixup()
         .remove_needed('libmm-qcamera.so'),
     ('vendor/lib64/libvendor.goodix.hardware.fingerprint@1.0-service.so', 'vendor/lib64/hw/gf_fingerprint.goodix.default.so'): blob_fixup()
