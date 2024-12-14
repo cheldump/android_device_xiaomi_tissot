@@ -30,11 +30,14 @@ AB_OTA_PARTITIONS += \
 # Power
 TARGET_TAP_TO_WAKE_NODE := "/proc/touchpanel/enable_dt2w"
 
-# Security Patch Level
-VENDOR_SECURITY_PATCH := 2020-05-05
-
 # Properties
 TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
+
+# Recovery
+TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.qcom
+
+# Security Patch Level
+VENDOR_SECURITY_PATCH := 2020-05-05
 
 # Inherit the proprietary files
 include vendor/xiaomi/tissot/BoardConfigVendor.mk
