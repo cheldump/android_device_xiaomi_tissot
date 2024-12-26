@@ -28,7 +28,7 @@ blob_fixups: blob_fixups_user_type = {
         .regex_replace('/system/etc/camera/', '/vendor/etc/camera/'),
     'vendor/lib64/libvendor.goodix.hardware.fingerprint@1.0-service.so': blob_fixup()
         .remove_needed('libprotobuf-cpp-lite.so'),
-    ('vendor/lib/libmmcamera_hdr_gb_lib.so', 'vendor/lib64/libgf_algo.so', 'vendor/lib64/libgf_ca.so', 'vendor/lib64/libgf_hal.so'): blob_fixup()
+    'vendor/lib/libmmcamera_hdr_gb_lib.so': blob_fixup()
         .replace_needed('libstdc++.so', 'libstdc++_vendor.so'),
     'vendor/lib/libmmcamera_tuning.so': blob_fixup()
         .remove_needed('libmm-qcamera.so'),

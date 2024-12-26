@@ -345,13 +345,12 @@ vendor/lib/libmmcamera_isp_gamma40.so
 # Consumer IR
 vendor/lib64/hw/consumerir.default.so:vendor/lib64/hw/consumerir.msm8953.so;FIX_SONAME
 
-# Fingerprint
-lib64/hw/gf_fingerprint.default.so:vendor/lib64/hw/gf_fingerprint.goodix.default.so;FIX_SONAME|b09aba758c469f3e3ff04197a723a15fbdfafea1
-lib64/libgf_algo.so:vendor/lib64/libgf_algo.so||223fe4cd12e9d71f24b6a5daceb5aff054312366
-lib64/libgf_ca.so:vendor/lib64/libgf_ca.so|76dbed8211fbff5d88ab0bdb66a7f6ed12c3f2c2
-lib64/libgf_hal.so:vendor/lib64/libgf_hal.so|01a0a951f5defc023903b8ec6f27211adf8513fd
-vendor/lib64/libvendor.goodix.hardware.fingerprint@1.0-service.so|feee131f714ed9a7dd93e7ba9bfc768cbf651426
-vendor/lib64/hw/fingerprint.default.so:vendor/lib64/hw/fingerprint.fpc.default.so;FIX_SONAME
+# Fingerprint - from daisy-user 10 QKQ1.191002.002 V11.0.21.0.QDLMIXM release-keys
+lib64/hw/gf_fingerprint.default.so:vendor/lib64/hw/gf_fingerprint.goodix.default.so;FIX_SONAME|b09aba758c469f3e3ff04197a723a15fbdfafea1|36610515dd6defc3c1d8a716a290257a833f217e
+lib64/libgf_ca.so:vendor/lib64/libgf_ca.so|a109ea31c3968ecd8298a6316b93e16d5d8dfdcd
+lib64/libgf_hal.so:vendor/lib64/libgf_hal.so|7ed7ac6bcc9172d1f36da5dc33b32af97170413e|3628c9c028efe3e9588d71526b40c6f7b3fe2fee
+vendor/lib64/libvendor.goodix.hardware.fingerprint@1.0-service.so|feee131f714ed9a7dd93e7ba9bfc768cbf651426|730ab55250b13cea8591b8448f64e8a107b7e385
+vendor/lib64/hw/fingerprint.default.so:vendor/lib64/hw/fingerprint.fpc.default.so;FIX_SONAME|8083a26a87d965b7939a2e802f10cfda0bf5dceb|c97b96a1342435318423434deb483d046c51035a
 
 # Gatekeeper - from daisy-user 10 QKQ1.191002.002 V11.0.21.0.QDLMIXM release-keys
 vendor/lib/hw/gatekeeper.msm8953.so|cd04140788659ae07a50081baeb3eb2e42f37028
