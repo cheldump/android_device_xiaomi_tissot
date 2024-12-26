@@ -30,17 +30,10 @@ blob_fixups: blob_fixups_user_type = {
         .remove_needed('libprotobuf-cpp-lite.so'),
     'vendor/lib64/libvendor.goodix.hardware.fingerprint@1.0.so': blob_fixup()
         .replace_needed('libhidlbase.so', 'libhidlbase-v32.so'),
-    ('vendor/lib/libmmcamera_hdr_gb_lib.so', 'vendor/lib64/libgf_algo.so', 'vendor/lib64/libgf_ca.so', 'vendor/lib64/libgf_hal.so', 'vendor/lib64/libgoodixfingerprintd_binder.so'): blob_fixup()
+    ('vendor/lib/libmmcamera_hdr_gb_lib.so', 'vendor/lib64/libgf_algo.so', 'vendor/lib64/libgf_ca.so', 'vendor/lib64/libgf_hal.so'): blob_fixup()
         .replace_needed('libstdc++.so', 'libstdc++_vendor.so'),
     'vendor/lib/libmmcamera_tuning.so': blob_fixup()
         .remove_needed('libmm-qcamera.so'),
-    'vendor/lib64/libgoodixfingerprintd_binder.so': blob_fixup()
-        .remove_needed('ld-android.so')
-        .remove_needed('libbacktrace.so')
-        .remove_needed('libunwind.so')
-        .remove_needed('libkeystore_binder.so')
-        .remove_needed('libsoftkeymasterdevice.so')
-        .remove_needed('libsoftkeymaster.so'),
 }  # fmt: skip
 
 module = ExtractUtilsModule(
