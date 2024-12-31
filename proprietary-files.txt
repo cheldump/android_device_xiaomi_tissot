@@ -64,6 +64,27 @@ vendor/lib/libqomx_jpegenc.so
 vendor/lib/libqomx_jpegenc_pipe.so
 vendor/lib/libremosaic_daemon.so
 
+# daisyy - from daisy-user 10 QKQ1.191002.002 V11.0.21.0.QDLMIXM release-keys
+vendor/lib/libubifocus.so
+vendor/lib/libchromaflash.so
+vendor/lib/libseemore.so
+vendor/lib/liboptizoom.so
+vendor/lib/libllvd_smore.so
+vendor/lib/libmmcamera_llvd.so
+vendor/lib/libmmcamera_chromaflash_lib.so
+vendor/lib/libmmcamera_optizoom_lib.so
+vendor/lib/libmmcamera_ubifocus_lib.so
+vendor/lib/libmmcamera_stillmore_lib.so
+
+# mido - from mido-user 7.0 NRD90M V11.0.2.0.NCFCNXM release-keys
+vendor/lib/libmmcamera_ppeiscore.so
+vendor/lib/libtrueportrait.so
+vendor/lib/libmmcamera_trueportrait_lib.so
+
+# hydrogen - from hydrogen-user 7.0 NRD90M V10.3.2.0.NBCCNXM release-keys
+vendor/lib/libllvd_sw_tnr.so
+vendor/lib/libmmcamera_sw_tnr.so
+
 # Camera actuators
 vendor/lib/libactuator_dw9763_ofilm_ov12a10.so
 vendor/lib/libactuator_dw9763_ofilm_ov13880.so
